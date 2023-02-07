@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import React from 'react'
 
+import RocketseatLogo from '../assets/rocketseat.svg'
+
 const Home: React.FC = () => {
   return (
     <>
@@ -9,6 +11,7 @@ const Home: React.FC = () => {
       </Head>
 
       <main>
+        <RocketseatLogo />
         <h1>Hello World!</h1>
       </main>
     </>
