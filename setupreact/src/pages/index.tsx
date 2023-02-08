@@ -1,3 +1,4 @@
+import { Container } from '@/styles/pages/Home'
 import Head from 'next/head'
 import React from 'react'
 
@@ -5,16 +6,16 @@ import RocketseatLogo from '../assets/rocketseat.svg'
 
 const Home: React.FC = () => {
   return (
-    <>
+    <Container>
       <Head>
         <title>Título do Site</title>
       </Head>
 
-      <main>
-        <RocketseatLogo />
-        <h1>Hello World!</h1>
-      </main>
-    </>
+    <RocketseatLogo />
+    <h1>ReactJS Structure</h1>
+    <p>A ReactJS + NextJS structure made by Matheus Miyagui.</p>
+
+    </Container>
   )
 }
 
