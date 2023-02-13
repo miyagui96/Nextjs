@@ -4,7 +4,6 @@ import Link from "next/link";
 export default function Pants() {
   return (
     <>
-      <Navbar></Navbar>
       <h1>Página de Pants</h1>
       <ul>
         <li>
