@@ -20,6 +20,11 @@ export default function Navbar() {
           <a>About</a>
         </Link>
       </li>
+      <li>
+        <Link legacyBehavior href="/contact">
+          <a>Contato</a>
+        </Link>
+      </li>
     </ul>
   )
 }
