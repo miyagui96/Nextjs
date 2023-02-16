@@ -21,10 +21,12 @@ export default function Todos({ todos }:any) {
       <h1>Tarefas para fazer:</h1>
       <ul className={styles.todolist}>
         {todos.map((todo:any) => (
-          <li key={todo.id}>{todo.title} - 
-          <Link href={`/todos/${todo.id}`}>
-            <p>Ver Mais</p>
-          </Link></li>
+          <li key={todo.id}>
+            {todo.id} - {todo.title} - 
+            <Link href={`/todos/${todo.id}`}>
+              <p>Ver Mais</p>
+            </Link>
+          </li>
         ))}
       </ul>
     </> 

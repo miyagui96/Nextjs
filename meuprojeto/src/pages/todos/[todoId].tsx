@@ -46,7 +46,7 @@ export default function Todo({ todo }:any){
         <p>Voltar</p> 
       </Link>
       <h1>Exibindo o {todo.id}</h1>
-      <h3>Texto: {todo.title}</h3>
+      <p>Texto: {todo.title}</p>
       <p>Comentário: bla bla bla 
         <Link legacyBehavior href={`/todos/${todo.id}/comments/1`}>
           <a>Detalhes</a>
