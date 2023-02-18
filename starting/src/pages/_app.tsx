@@ -1,18 +1,19 @@
 import { AppProps } from 'next/app'
 import Head from 'next/head'
-import CssBaseline from '@mui/material/CssBaseline';
+import CssBaseline from '@mui/material/CssBaseline'
+import Layout from '../../components/screen/Layout/Layout'
+import '../../styles/globals.css'
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
   <>
     <Head>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-      />
+      <title>Next.js Boilerplate</title>
     </Head>
-    <CssBaseline />
-    <Component {...pageProps} />
+    <Layout>
+      <CssBaseline/>
+      <Component {...pageProps} />
+    </Layout>
   </>
   )
 }
